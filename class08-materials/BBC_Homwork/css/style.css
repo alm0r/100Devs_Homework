@@ -1,0 +1,103 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.header-section {
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.header-section-logo {
+  float: left;
+  width: 8%;
+}
+
+.header-section-sign-in {
+  float: left;
+  width: 12%;
+}
+
+.header-sections {
+  float: left;
+  width: 70%;
+}
+
+.header-section-item {
+  float: left;
+  width: 11.111%;
+  margin: 0;
+  text-align: center;
+}
+
+.header-section-item-search {
+  float: left;
+  width: 10%;
+}
+
+.header-section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main-img-block {
+  float: left;
+  width: 50%;
+}
+
+.secondary-img-block {
+  float: left;
+  width: 50%;
+}
+
+.main-img-sub-block {
+  width: 600px;
+  height: 400px;
+  border: 2px solid blue;
+}
+
+.secondary-img-sub-block {
+  width: 400px;
+  height: 200px;
+  border: 2px solid red;
+  float: left;
+}
+
+.news-block {
+  float: left;
+  width: 33.3333%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
