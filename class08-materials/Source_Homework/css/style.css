@@ -31,6 +31,9 @@ nav {
   float: left;
 }
 
+.hamburger-icon {
+  display: none;
+}
 nav > img {
   float: left;
   width: 10%;
@@ -106,3 +109,68 @@ section > div > a {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media (max-width: 1200px) {
+  header {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid grey;
+  }
+
+  nav > div,
+  nav > button {
+    display: none;
+  }
+
+  nav > img {
+    /* border: 2px solid orange; */
+    float: left;
+    width: 40%;
+    /* width: 50%; */
+    /* margin-left: 50px; */
+  }
+
+  .hamburger-icon {
+    display: block;
+    float: left;
+    width: 40%;
+  }
+
+  main {
+    /* border: 2px solid orange; */
+    float: left;
+    width: 100%;
+    height: 400px;
+    padding-top: 20px;
+  }
+
+  main > div > button,
+  main > div > input {
+    display: block;
+    width: 100%;
+  }
+
+  section {
+    display: none;
+  }
+
+  .left-block {
+    float: left;
+    width: 100%;
+    /* border: 2px solid green; */
+    padding: 30px 30px;
+  }
+
+  .right-block {
+    float: right;
+    width: 100%;
+  }
+
+  .img {
+    display: block;
+    height: 400px;
+    width: 400px;
+    border: 4px solid darkcyan;
+    background-color: lightblue;
+  }
+}
