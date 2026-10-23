@@ -1,0 +1,176 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav,
+section,
+main,
+footer {
+  float: left;
+  width: 100%;
+  padding: 0 5%;
+}
+
+nav > div {
+  float: left;
+  width: 48%;
+}
+
+nav > img {
+  float: left;
+  width: 20%;
+}
+
+nav > button {
+  float: right;
+  width: 5%;
+}
+
+section .grey-box {
+  width: 50%;
+  float: left;
+}
+
+nav,
+main {
+  background-color: darkgray;
+}
+
+nav {
+  color: white;
+}
+
+nav div > a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  background-color: azure;
+  /* padding: 2px 46px; */
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  height: 600px;
+  padding-top: 150px;
+  text-align: center;
+  color: white;
+}
+
+main > img {
+  display: block;
+  margin-top: 240px;
+  color: black;
+}
+
+.why-section {
+  height: 400px;
+  background-color: azure;
+  text-align: center;
+  padding: 150px 550px;
+}
+
+.visit-section {
+  height: 700px;
+  background-color: lightgray;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.img-box {
+  background-color: darkblue;
+  height: 200px;
+  width: 300px;
+  display: inline-block;
+}
+
+.grey-box {
+  padding: 0 200px;
+}
+
+.btn-classes {
+  background: none;
+  border: 1px solid black;
+  padding: 6px 12px;
+  margin-top: 40px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.volunteer-section {
+  height: 500px;
+  background-color: azure;
+  text-align: center;
+  padding: 150px 550px;
+}
+
+.volunteer-section > button {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 17px 34px;
+}
+
+footer {
+  background-color: black;
+  height: 300px;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.left-block {
+  float: left;
+}
+
+.right-block {
+  float: right;
+}
+
+.bar {
+  display: block;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
+.exemption {
+  float: left;
+  width: 95%;
+}
+
+.level-ground-logo {
+  float: right;
+  width: 5%;
+  color: white;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
